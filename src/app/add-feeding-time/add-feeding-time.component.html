@@ -1,0 +1,18 @@
+<md-card>
+  {{message}}
+  <div>
+    <md-select placeholder="Kiedy jadła?" [(ngModel)]="feedingTime">
+      <md-option *ngFor="let ft of feedingTimes" [value]="ft.amount">{{ ft.name }}</md-option>
+    </md-select>
+  </div>
+  <div>
+    <md-select placeholder="Ile wypiła?" [(ngModel)]="drinkValue">
+      <md-option *ngFor="let dv of drinkValues" [value]="dv.amount">{{ dv.name }}</md-option>
+    </md-select>
+  </div>
+  <div id="add-feeding">
+    <button md-fab (click)="addFeedingTime()">
+      <i class="material-icons">add</i>
+    </button>
+  </div>
+</md-card>

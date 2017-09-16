@@ -1,0 +1,11 @@
+<md-card *ngFor="let feedingTime of feedingTimes | async">
+  <p><span class="datetime" md-line>{{feedingTime.time * 1000 | date:'HH:mm'}}</span></p>
+  <p><span class="datetime" md-line>{{feedingTime.time * 1000 | date:'EEEE'}}</span></p>
+  <p><span class="datetime" md-line>{{feedingTime.value}} <span *ngIf="feedingTime.value != 'cyc'">ml.</span></span>
+  </p>
+  <p md-line>
+    <span *ngFor="let item of lastAdded as items; index as i; last as isLast" [ngClass]="getClass(i)">
+        {{item.time * 1000 | date:'HH:mm'}} - {{item.value}}<span *ngIf="item.value != 'cyc'">ml.</span> <span *ngIf="!isLast">|</span>
+    </span>
+  </p>
+</md-card>

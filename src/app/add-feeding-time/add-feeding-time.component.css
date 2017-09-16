@@ -1,0 +1,11 @@
+.mat-button-toggle-checked{
+    background-color: #00bcd4;
+}
+
+md-button-toggle-group{
+    margin: 5px auto;
+}
+
+div#add-feeding{
+    text-align: right;
+}

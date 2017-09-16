@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary" class="mat-elevation-z6">
+  <span>{{title}}</span>
+</md-toolbar>
+<button *ngIf="!userLogged; else content" md-raised-button color="accent" (click)="login()">Zaloguj</button>
+<ng-template #content>
+<feeding-times-list></feeding-times-list>
+<add-feeding-time></add-feeding-time>
+</ng-template>

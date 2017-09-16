@@ -1,0 +1,30 @@
+md-card span.datetime{
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+md-card p {
+    text-align: center;
+}
+
+span.last-0{
+    color: rgba(0, 0, 0, 1);
+}
+
+span.last-1{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+span.last-2{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+span.last-3{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+span.last-4{
+    color: rgba(0, 0, 0, 0.2);
+}
