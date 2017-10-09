@@ -9,3 +9,9 @@ md-button-toggle-group{
 div#add-feeding{
     text-align: right;
 }
+
+div#add-feeding-now{
+    text-align: right;
+    margin-top: 10px;
+    
+}

@@ -15,16 +15,16 @@ export class AddFeedingTimeComponent implements OnInit {
   drinkValue;
   drinkValues = [
     { amount: "cyc", name: "cyc" },
-    { amount: "5", name: "5 ml." },
-    { amount: "10", name: "10 ml." },
-    { amount: "15", name: "15 ml." },
-    { amount: "20", name: "20 ml." },
-    { amount: "25", name: "25 ml." },
     { amount: "30", name: "30 ml." },
     { amount: "35", name: "35 ml." },
     { amount: "40", name: "40 ml." },
     { amount: "45", name: "45 ml." },
-    { amount: "50", name: "50 ml." }
+    { amount: "50", name: "50 ml." },
+    { amount: "60", name: "60 ml." },
+    { amount: "70", name: "70 ml." },
+    { amount: "80", name: "80 ml." },
+    { amount: "100", name: "100 ml." },
+    { amount: "120", name: "120 ml." }
   ];
 
   feedingTime;
@@ -50,6 +50,20 @@ export class AddFeedingTimeComponent implements OnInit {
       "time": feedingTimeInUTCSeconds,
       "type": "-",
       "value": this.drinkValue
+    };
+    this.feedingTimesDb.push(newRecord);
+
+    this.message = "Dodano!";
+  }
+
+
+  addFeedingTimeNow() {
+    this.feedingTimesDb = this.db.list('/feeding-times');
+    var feedingTimeInUTCSeconds = (Math.round(new Date().getTime()/1000.0));
+    let newRecord = {
+      "time": feedingTimeInUTCSeconds,
+      "type": "-",
+      "value": "cyc"
     };
     this.feedingTimesDb.push(newRecord);
 
