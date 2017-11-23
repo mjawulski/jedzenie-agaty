@@ -14,17 +14,33 @@ span.last-0{
 }
 
 span.last-1{
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.95);
 }
 
 span.last-2{
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.85);
 }
 
 span.last-3{
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 span.last-4{
+    color: rgba(0, 0, 0, 0.65);
+}
+
+span.last-5{
+    color: rgba(0, 0, 0, 0.55);
+}
+span.last-6{
+    color: rgba(0, 0, 0, 0.45);
+}
+span.last-7{
+    color: rgba(0, 0, 0, 0.35);
+}
+span.last-8{
+    color: rgba(0, 0, 0, 0.25);
+}
+span.last-9{
     color: rgba(0, 0, 0, 0.2);
 }

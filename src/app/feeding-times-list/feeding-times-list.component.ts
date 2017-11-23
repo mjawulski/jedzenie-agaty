@@ -27,7 +27,7 @@ export class FeedingTimesListComponent implements OnInit {
     });
     this.db.list('/feeding-times',{
       query:{
-        limitToLast: 6
+        limitToLast: 11
       }
     }).subscribe(result=>{
       result.reverse().splice(0,1);

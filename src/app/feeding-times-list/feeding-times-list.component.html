@@ -5,7 +5,7 @@
   </p>
   <p md-line>
     <span *ngFor="let item of lastAdded as items; index as i; last as isLast" [ngClass]="getClass(i)">
-        {{item.time * 1000 | date:'HH:mm'}} - {{item.value}}<span *ngIf="item.value != 'cyc'">ml.</span> <span *ngIf="!isLast">|</span>
+      {{item.time * 1000 | date:'HH:mm'}}<span *ngIf="!isLast"> |</span>
     </span>
   </p>
 </md-card>

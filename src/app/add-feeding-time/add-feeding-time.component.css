@@ -8,6 +8,7 @@ md-button-toggle-group{
 
 div#add-feeding{
     text-align: right;
+    margin-top: -100px;
 }
 
 div#add-feeding-now{
